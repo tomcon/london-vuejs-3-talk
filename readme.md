@@ -18,8 +18,10 @@ Very small project demonstrating the following:
   Credit: app-loader.js is a early, slightly modified version from [here](https://github.com/your-budget-today/personal)
 - Example of a component with an 'inline-template'
 
-npm install live-server -g  
+```
+npm install -g live-server 
 live-server 
+``` 
 
 ###/slides
 Slides from the meeting
