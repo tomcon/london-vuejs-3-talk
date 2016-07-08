@@ -14,8 +14,10 @@ Along the way see how to move from the simpler examples shown on vuejs.org to mo
 ###/simple-extended
 Very small project demonstrating the following:
 - Dynamically loaded components from vue files
-- Simple method using app-loader.js
+- Simple method using app-loader.js   
+  Credit: app-loader.js is a early, slightly modified version from [here](https://github.com/your-budget-today/personal)
 - Example of a component with an 'inline-template'
+
 
 ###/slides
 Slides from the meeting
