@@ -10,8 +10,6 @@ Part 2; Looking behind a larger app and tips learned from both.
 Along the way see how to move from the simpler examples shown on vuejs.org to more complex apps and remain productive. Suited for people fairly new to Vue.js and/or those who have come to it from other languages.
 
 ## Folders
-###/real-time results board
-app1, code snippets to follow if permission given by ReportLab
 
 ###/simple-extended
 Very small project demonstrating the following:
@@ -31,6 +29,9 @@ Useful to speed up dev if you're short of time, or want to use this for convenie
 Creates symlinks within your project node_modules folder from your global install  
 
 - also see last slide "Useful Tools & Information"
+
+## Real-time results board
+app1, code snippets may follow if permission is given by ReportLab
 
 ## Support and Feedback
 
