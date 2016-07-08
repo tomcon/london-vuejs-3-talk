@@ -11,7 +11,7 @@ Along the way see how to move from the simpler examples shown on vuejs.org to mo
 
 ## Folders
 
-###/simple-extended
+###/simple-extended (taken from vue-cli simple template)
 Very small project demonstrating the following:
 - Dynamically loaded components from vue files
 - Simple method using app-loader.js   
