@@ -1,10 +1,8 @@
-# Laravel Elixir for any project
+# Real-time live results board & tips from working on a larger Vue.js app
 
 - London VueJS Meetup, Thursday 7th July 2016
 
 ## Abstract
-
-Talk #2 - Real-time live results board & tips from working on a larger Vue.js app
 
 Part 1; Vue.js, Node, Socket.io, MongoDB working together to create a live results board for sporting events. 
 Part 2; Looking behind a larger app and tips learned from both. 
@@ -32,14 +30,13 @@ useful utils to aid development
    Creates symlinks within your project node_modules folder from your global install
 - also see last slide "Useful Tools & Information"
 
-
 ## Support and Feedback
 
 Please do also give me feedback on joind in:
-[https://joind.in/talk/32dc8](https://joind.in/talk/32dc8)
+[https://joind.in/talk/be1cb](https://joind.in/talk/be1cb)
 
 Feel free to send any questions by email:
-
 `tomconlonuk at gmail.com`
 
-Thanks
+Thanks & hope it was useful,
+Tom
