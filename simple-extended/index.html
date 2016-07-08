@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Welcome to Vue</title>
+   <style id="css-basic" media="all"></style>
+   <style>
+      .inline-template {
+         background-color: #DEEBFF;
+         padding: 10px;
+         border: 1px groove #eee;
+      }
+
+      .easy-dynamic-components {
+         background-color: #eee;
+         padding: 10px;
+         border: 1px groove lightgrey;
+      }
+
+      .easy-dynamic-components h2 {
+         margin-bottom: 5px;
+      }
+
+      .add-on-fly {
+         display:inline-block;
+         color: blue;
+         padding-left: 10px;
+      }
+
+      h1, h2, h3, h4 {
+         text-align: center;
+         margin: 0px 10px 10px 10px;;
+      }
+   </style>
+</head>
+
+<body>
+   <div id="app">
+      <h1>Modified Vue Template (Simple)</h1>
+      <ul>
+         <li>To learn more about Vue, visit <a href="http://vuejs.org/guide/" target="_blank">Vue website</a></li>
+         <li>Credit: app-loader.js is a early, slightly modified version from <a href="https://github.com/your-budget-today/personal" target="_blank">here</a></li>
+      </ul>
+
+      <inline-template-component inline-template>
+         <div class="inline-template">
+            <h2>{{* inlinecaption}}</h2>
+            <p>These are compiled as the component's own template 
+            Not parent's transclusion content</p>
+         </div>
+      </inline-template-component>
+
+      <div class="easy-dynamic-components">
+         <h2>Dynamically loaded components from vue files</h2>
+         <h4>(easy way using app-loader.js, good for prototyping & more)</h4><br><br>
+         
+         <div><span>Current View:</span>
+            <template v-for="v in views"> 
+               <button @click="setView(v)">{{* v}}</button>
+            </template>
+             <div class="add-on-fly">Add dynamic EA component <button  @click="views.push('ea')">Add</button></div>
+         </div>
+       
+         <div v-show="currentView !== 'nada'">
+            <component :is="currentView"></component>
+         </div>
+         <br>
+      </div>
+
+   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.9.3/vue-resource.min.js"></script>
+  <script src="/app/app-loader.js"></script>
+
+  <script>
+
+    new Vue({
+      el: '#app',
+      data: {
+        currentView:'nada',
+        views: ['nada', 'settings', 'supervisor']
+      },
+      components: {
+         'inline-template-component' : { 
+            data : function() {  
+               return {inlinecaption : "Example of a component with an 'inline-template'" }  
+            }
+         },
+      },
+      methods: {
+         setView : function(v){
+            var self=this;
+
+            /* look at your console to see difference between logging*/
+            console.log(this);
+            console.log( '-'.repeat(50));
+            this.$log();
+
+            /* notice also how the 'ea' view is not in the views array  */
+            require(v)(
+               function(newcomp){self.currentView = v;},
+               function(){self.currentView = v;}
+            );
+         }
+      }
+    })
+  </script>
+</body>
+</html>
+
+
+
