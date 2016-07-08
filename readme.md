@@ -18,10 +18,10 @@ Very small project demonstrating the following:
 - Example of a component with an 'inline-template'
 
 ###/slides
-slides from the meeting
+Slides from the meeting
 
 ###/useful
-useful utils to aid development
+Useful utils to aid development
 
 - mk_node_module_links.js  
 npm install can be very time-consuming, plus windows users suffer from folder depth  
@@ -31,7 +31,8 @@ Creates symlinks within your project node_modules folder from your global instal
 - also see last slide "Useful Tools & Information"
 
 ## Real-time results board
-app1, code snippets may follow if permission is given by ReportLab
+Currently held in a private repo.   
+Code snippets may follow if permission is given by ReportLab
 
 ## Support and Feedback
 
