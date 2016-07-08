@@ -19,7 +19,7 @@ Very small project demonstrating the following:
 - Example of a component with an 'inline-template'
 
 npm install live-server -g  
-then live-server 
+live-server 
 
 ###/slides
 Slides from the meeting
