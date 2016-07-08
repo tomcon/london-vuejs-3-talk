@@ -98,7 +98,9 @@
 
             /* notice also how the 'ea' view is not in the views array  */
             require(v)(
+               // success
                function(newcomp){self.currentView = v;},
+               // failure, we still set it for 'nada'
                function(){self.currentView = v;}
             );
          }
