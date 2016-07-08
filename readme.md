@@ -1,4 +1,4 @@
-# Real-time live results board & tips from working on a larger Vue.js app
+# Real-time live results board & other tips
 
 - London VueJS Meetup, Thursday 7th July 2016
 
