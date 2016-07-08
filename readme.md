@@ -28,7 +28,8 @@ npm install can be very time-consuming, plus windows users suffer from folder de
 Useful to speed up dev if you're short of time, or want to use this for convenience  
 Creates symlinks within your project node_modules folder from your global install  
 
-- also see last slide "Useful Tools & Information"
+- also see last slide "Useful Tools & Information"  
+Especially ngrok & Vue-socket.io
 
 ## Real-time results board
 Currently held in a private repo.   
