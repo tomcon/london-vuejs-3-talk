@@ -1,4 +1,14 @@
 /*-----------------------------------------------------------------------------------------
+
+***** NOTE ***** 
+just came across what appears to be a superior method: 
+
+   npm link <packagename>
+
+- must be run from the node_modules folder 
+- must have an entry in package.json
+
+--------------------------------------------------------------------------------
 To speed up dev if you're short of time, or want to use this for convenience
 
 npm install can be very time-consuming, plus windows users suffer from folder depth 
