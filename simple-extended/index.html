@@ -63,9 +63,8 @@
          <div v-show="currentView !== 'nada'">
             <component :is="currentView"></component>
          </div>
-         <br>
-      </div>
 
+      </div>
    </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js"></script>
@@ -87,6 +86,7 @@
          'settings': need('settings'),
          'supervisor': need('supervisor'),
          --------------------------------------------------------------*/
+         // note there is only one component here, our special example (others dynamically created below)
          'inline-template-component' : { 
             data : function() {  
                return {inlinecaption : "Example of a component with an 'inline-template'" }  
@@ -102,9 +102,13 @@
             console.log( '-'.repeat(50));
             this.$log();
 
+            /* need() function is in simple-extended/app/app-loader.js */
+            /* it will create the view first time or retrieve it afterwards */
             /* notice also how the 'ea' view is not in the views array  */
-            require(v)(
+            need(v)(
+               // success
                function(newcomp){self.currentView = v;},
+               // failure, we still set it for 'nada'
                function(){self.currentView = v;}
             );
          }

@@ -15,15 +15,15 @@ var
    fs = require('fs');
 	
 var
-	// global node_modules location, change to suit
+   // global node_modules location, change this & dirs array to suit
    srce  = 'c:/bin/node/node_modules/',
-	dest = process.cwd() + '/node_modules/';
+   dest = process.cwd() + '/node_modules/';
    dirs = [
       'express',
       'body-parser',
       'favicons',
       'moment',
-		'webpack'
+      'webpack'
    ];
 
 console.log(dest);

@@ -2,7 +2,7 @@
 var Gimports = {};
 
 // loader
-var require = function (cname) {
+var need = function (cname) {
    return function(resolve, reject) {
 
       if (Gimports[cname]) {
