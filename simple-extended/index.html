@@ -81,6 +81,12 @@
         views: ['nada', 'settings', 'supervisor']
       },
       components: {
+         /* ---------------------------------------------------------------
+         if you know ahead then you can also load dynamically them this way too
+
+         'settings': need('settings'),
+         'supervisor': need('supervisor'),
+         --------------------------------------------------------------*/
          'inline-template-component' : { 
             data : function() {  
                return {inlinecaption : "Example of a component with an 'inline-template'" }  
