@@ -5,8 +5,8 @@ just came across what appears to be a superior method:
 
    npm link <packagename>
 
-- must be run from the node_modules folder 
 - must have an entry in package.json
+see: https://docs.npmjs.com/cli/link
 
 --------------------------------------------------------------------------------
 To speed up dev if you're short of time, or want to use this for convenience
