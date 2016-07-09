@@ -43,9 +43,6 @@ Code snippets may follow if permission is given by ReportLab
 
 ## Support and Feedback
 
-Please do also give me feedback on joind in:
-[https://joind.in/talk/be1cb](https://joind.in/talk/be1cb)
-
 Feel free to send any questions by email:
 `tomconlonuk at gmail.com`
 
