@@ -17,6 +17,10 @@ Very small project demonstrating the following:
 - Simple method using app-loader.js   
   Credit: app-loader.js is a early, slightly modified version from [here](https://github.com/your-budget-today/personal)
 - Example of a component with an 'inline-template'
+- useful tip: to debug these dynamically loaded .vue files just put e.g. to debug home.vue (paths not reqd):
+  //# sourceURL=home.vue            
+  just before the closing script tag 
+See also  (http://stackoverflow.com/questions/17367560/chrome-development-tool-vm-file-from-javascript)
 
 ```
 npm install -g live-server 
