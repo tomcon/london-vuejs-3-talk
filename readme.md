@@ -43,4 +43,3 @@ Especially ngrok & Vue-socket.io
 
 ## Real-time results board
 Currently held in a private repo.   
-Code snippets may follow if permission is given by ReportLab
