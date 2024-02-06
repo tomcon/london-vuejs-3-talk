@@ -44,11 +44,3 @@ Especially ngrok & Vue-socket.io
 ## Real-time results board
 Currently held in a private repo.   
 Code snippets may follow if permission is given by ReportLab
-
-## Support and Feedback
-
-Feel free to send any questions by email:
-`tomconlonuk at gmail.com`
-
-Thanks & hope it was useful,
-Tom
